@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:11.1-alpine
+    ports:
+      - 5430:5432
+    environment:
+      POSTGRES_DB: comment_system
+      POSTGRES_USER: comment_system
+      POSTGRES_PASSWORD: comment_system
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
