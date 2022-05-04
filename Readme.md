@@ -1,7 +1,7 @@
 # Blog comment system
 Тестовое задание в команду "Квартирка" (Junior Python Разработчик)
 
- [ПРОЕКТИРОВАНИЕ БД](https://drive.google.com/file/d/1MBpDzxMBGHr5QQwQ3mZeQAZXjIrCvgBm/view?usp=sharing)
+ [ПРОЕКТИРОВАНИЕ БД](https://drive.google.com/file/d/1gt5eG1-re1C62b_tVEUhnqwzypTF_ZX1/view?usp=sharing)
  
 # Инструкция по запуску
 1. `python3 -m venv venv` - инициализация виртуального окружения
