@@ -39,5 +39,5 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class CommentThreadAPIView(RetrieveAPIView):
-    queryset = Comment.objects.filter(nested_lvl=3)
+    queryset = Comment.objects.filter(level_nest=3)
     serializer_class = CommentThreadSerializer

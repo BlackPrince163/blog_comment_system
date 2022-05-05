@@ -24,11 +24,12 @@ from .views import CommentViewSet, ArticleViewSet, CommentThreadAPIView
 router = routers.DefaultRouter()
 router.register(r'articles/(?P<article_id>\d+)/comments', CommentViewSet)
 router.register(r'articles', ArticleViewSet)
-router.register(r'comment_thread/<int:pk>/', CommentThreadAPIView.as_view())
+# router.register(r'comment_thread/<int:pk>/', CommentThreadAPIView.as_view())
 
 
 urlpatterns = [
     path('', include(router.urls)),
+    path(r'comment_thread/<int:pk>/', CommentThreadAPIView.as_view())
 ]
 
 schema_view = get_schema_view(
