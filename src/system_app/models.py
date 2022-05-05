@@ -19,4 +19,4 @@ class Comment(models.Model):
     datetime_publish = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.response_comment}, f{self.content}" if self.response_comment else f"{self.content}"
+        return f"{self.level_nest}  {self.content.lower()}" if self.response_comment else f"{self.content}"
